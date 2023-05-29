@@ -1,22 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Arquivos de Origem">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Arquivos de Cabeçalho">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Arquivos de Recurso">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="BaseEngine">
+      <UniqueIdentifier>{97a6bbbd-e9f4-4bd9-b935-3cd624e5660d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\main">
+      <UniqueIdentifier>{5bd06873-a3b4-4008-8a31-18a5115526f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\gameUpdate">
+      <UniqueIdentifier>{f0e02eb3-c992-46bb-a135-5e9105a6d754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\gameMenager">
+      <UniqueIdentifier>{c4e27cc5-7802-4e62-9918-fd6610509dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL">
+      <UniqueIdentifier>{4cc29f83-f846-4053-b8fb-1f79345d7be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\window">
+      <UniqueIdentifier>{19f753ef-3c29-4da8-aca4-c32b82efe07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\Transform">
+      <UniqueIdentifier>{f0bb8051-7f14-4d6d-b4b3-b93e22eee68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\Transform\position">
+      <UniqueIdentifier>{4870b897-7d87-4feb-85d7-5422da21e74e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\Transform\rotation">
+      <UniqueIdentifier>{04b89093-f809-4bca-beaa-fc27ada457a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\Transform\scale">
+      <UniqueIdentifier>{89122082-db1f-472d-ad18-f2f1f2c6db93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\Transform\vectorT">
+      <UniqueIdentifier>{cd68e4e1-0cb7-4395-8656-8e19df9be613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\GLFWInit">
+      <UniqueIdentifier>{f2e040fa-df77-459e-af85-6541cbcba4f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Arquivos de Origem</Filter>
+    <ClCompile Include="glad.c">
+      <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>BaseEngine\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>BaseEngine\gameMenager</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>BaseEngine\gameUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>BaseEngine\OPENGL\window</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h">
+      <Filter>BaseEngine\gameMenager</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>BaseEngine\gameUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>BaseEngine\OPENGL\window</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

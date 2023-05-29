@@ -1,46 +1,41 @@
+#include <glad/glad.h>
 #include <glfw/glfw3.h>
 #include <iostream>
+#include "GameManager.h"
 
-int main(void)
+void processInput(GLFWwindow* window);
+void initGLFW();
+
+GameManager gameMenager;
+
+int main()
 {
-    
+    initGLFW();
 
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
+    gameMenager.start();
 
-    /* Create a windowed mode window and its OpenGL context */
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Hello World", NULL, NULL);
 
-    if (!window)
+    while (!glfwWindowShouldClose(gameMenager.WindowEngine.Get_Window()))
     {
-        glfwTerminate();
-        return -1;
-    }
+        processInput(gameMenager.WindowEngine.Get_Window());
 
-    /* Make the window's context current */
-    glfwMakeContextCurrent(window);
-
-
-    std::cout << "Comany: Minima Studio" << std::endl;
-    std::cout << "Model: " << glGetString(GL_RENDERER) << std::endl;
-    std::cout << "OPENGL: " << glGetString(GL_VERSION) << std::endl;
-
-    glClearColor(0.1,0.1,0.1,1.0);
-
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
-    {
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        /* Swap front and back buffers */
-        glfwSwapBuffers(window);
-
-        /* Poll for and process events */
-        glfwPollEvents();
+        gameMenager.Update();
     }
 
     glfwTerminate();
     return 0;
+}
+
+void processInput(GLFWwindow* window)
+{
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+}
+
+void initGLFW()
+{
+    glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 }
