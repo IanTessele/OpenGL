@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp(29,26): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp(29,22): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp(29,18): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+  MinimaStudio.vcxproj -> C:\open gl\new OpenGL\MinimaStudio\x64\Debug\MinimaStudio.exe
