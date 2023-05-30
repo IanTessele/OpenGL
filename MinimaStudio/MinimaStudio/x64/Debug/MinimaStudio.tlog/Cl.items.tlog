@@ -2,4 +2,9 @@ C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\game.cpp;C:\open gl\new OpenGL\M
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\GameManager.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\GameManager.obj
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\glad.c;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\glad.obj
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\main.obj
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\position.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\position.obj
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\rotation.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\rotation.obj
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\scale.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\scale.obj
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\transform.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\transform.obj
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\vector3.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\vector3.obj
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\window.cpp;C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\x64\Debug\window.obj

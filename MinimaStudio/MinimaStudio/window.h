@@ -1,8 +1,8 @@
+#pragma once
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <glfw/glfw3.h>
-#include<GL/GL.h>
+#include "OpenGL_Includes.h"
 
 class window
 {

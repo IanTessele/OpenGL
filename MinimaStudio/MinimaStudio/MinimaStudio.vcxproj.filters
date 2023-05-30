@@ -38,9 +38,6 @@
     <Filter Include="BaseEngine\OPENGL\Transform\vectorT">
       <UniqueIdentifier>{cd68e4e1-0cb7-4395-8656-8e19df9be613}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaseEngine\OPENGL\GLFWInit">
-      <UniqueIdentifier>{f2e040fa-df77-459e-af85-6541cbcba4f4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -58,6 +55,21 @@
     <ClCompile Include="window.cpp">
       <Filter>BaseEngine\OPENGL\window</Filter>
     </ClCompile>
+    <ClCompile Include="vector3.cpp">
+      <Filter>BaseEngine\OPENGL\Transform\vectorT</Filter>
+    </ClCompile>
+    <ClCompile Include="position.cpp">
+      <Filter>BaseEngine\OPENGL\Transform\position</Filter>
+    </ClCompile>
+    <ClCompile Include="rotation.cpp">
+      <Filter>BaseEngine\OPENGL\Transform\rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="scale.cpp">
+      <Filter>BaseEngine\OPENGL\Transform\scale</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>BaseEngine\OPENGL\Transform</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
@@ -68,6 +80,24 @@
     </ClInclude>
     <ClInclude Include="window.h">
       <Filter>BaseEngine\OPENGL\window</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3.h">
+      <Filter>BaseEngine\OPENGL\Transform\vectorT</Filter>
+    </ClInclude>
+    <ClInclude Include="position.h">
+      <Filter>BaseEngine\OPENGL\Transform\position</Filter>
+    </ClInclude>
+    <ClInclude Include="rotation.h">
+      <Filter>BaseEngine\OPENGL\Transform\rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="scale.h">
+      <Filter>BaseEngine\OPENGL\Transform\scale</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>BaseEngine\OPENGL\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_Includes.h">
+      <Filter>BaseEngine\OPENGL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

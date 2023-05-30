@@ -1,6 +1,7 @@
-#include <glad/glad.h>
-#include <glfw/glfw3.h>
-#include <iostream>
+#pragma once
+#ifndef MAIN_H
+#define MAIN_H
+
 #include "GameManager.h"
 
 void processInput(GLFWwindow* window);
@@ -39,3 +40,5 @@ void initGLFW()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 }
+
+#endif // !MAIN_H

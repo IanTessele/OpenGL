@@ -23,11 +23,22 @@
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="position.cpp" />
+    <ClCompile Include="rotation.cpp" />
+    <ClCompile Include="scale.cpp" />
+    <ClCompile Include="transform.cpp" />
+    <ClCompile Include="vector3.cpp" />
     <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="OpenGL_Includes.h" />
+    <ClInclude Include="position.h" />
+    <ClInclude Include="rotation.h" />
+    <ClInclude Include="scale.h" />
+    <ClInclude Include="transform.h" />
+    <ClInclude Include="vector3.h" />
     <ClInclude Include="window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -128,7 +139,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
