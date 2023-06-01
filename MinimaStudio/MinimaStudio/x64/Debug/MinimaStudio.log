@@ -1,4 +1,5 @@
 ﻿  main.cpp
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp(95,28): warning C4101: 'texture2': unreferenced local variable
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp(179,44): warning C4100: 'window': unreferenced formal parameter
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   MinimaStudio.vcxproj -> C:\open gl\new OpenGL\MinimaStudio\x64\Debug\MinimaStudio.exe
