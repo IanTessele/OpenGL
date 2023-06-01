@@ -1,2 +1,2 @@
 #define STB_IMAGE_IMPLEMENTATION
-#include "../../dependeces/src/stb_image.h"
+#include <STB/stb_image.h>
