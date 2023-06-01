@@ -11,32 +11,14 @@
     <Filter Include="BaseEngine\main">
       <UniqueIdentifier>{5bd06873-a3b4-4008-8a31-18a5115526f5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaseEngine\gameUpdate">
-      <UniqueIdentifier>{f0e02eb3-c992-46bb-a135-5e9105a6d754}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="BaseEngine\gameMenager">
-      <UniqueIdentifier>{c4e27cc5-7802-4e62-9918-fd6610509dcf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="BaseEngine\OPENGL">
       <UniqueIdentifier>{4cc29f83-f846-4053-b8fb-1f79345d7be3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaseEngine\OPENGL\window">
-      <UniqueIdentifier>{19f753ef-3c29-4da8-aca4-c32b82efe07f}</UniqueIdentifier>
+    <Filter Include="BaseEngine\OPENGL\shader">
+      <UniqueIdentifier>{7c05b330-7bcc-4aec-85bf-7115088a9282}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaseEngine\OPENGL\Transform">
-      <UniqueIdentifier>{f0bb8051-7f14-4d6d-b4b3-b93e22eee68f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="BaseEngine\OPENGL\Transform\position">
-      <UniqueIdentifier>{4870b897-7d87-4feb-85d7-5422da21e74e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="BaseEngine\OPENGL\Transform\rotation">
-      <UniqueIdentifier>{04b89093-f809-4bca-beaa-fc27ada457a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="BaseEngine\OPENGL\Transform\scale">
-      <UniqueIdentifier>{89122082-db1f-472d-ad18-f2f1f2c6db93}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="BaseEngine\OPENGL\Transform\vectorT">
-      <UniqueIdentifier>{cd68e4e1-0cb7-4395-8656-8e19df9be613}</UniqueIdentifier>
+    <Filter Include="BaseEngine\OPENGL\texture">
+      <UniqueIdentifier>{b891de55-f8b3-4bbe-a361-b4ee9138ddd4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,58 +28,30 @@
     <ClCompile Include="main.cpp">
       <Filter>BaseEngine\main</Filter>
     </ClCompile>
-    <ClCompile Include="GameManager.cpp">
-      <Filter>BaseEngine\gameMenager</Filter>
-    </ClCompile>
-    <ClCompile Include="game.cpp">
-      <Filter>BaseEngine\gameUpdate</Filter>
-    </ClCompile>
-    <ClCompile Include="window.cpp">
-      <Filter>BaseEngine\OPENGL\window</Filter>
-    </ClCompile>
-    <ClCompile Include="vector3.cpp">
-      <Filter>BaseEngine\OPENGL\Transform\vectorT</Filter>
-    </ClCompile>
-    <ClCompile Include="position.cpp">
-      <Filter>BaseEngine\OPENGL\Transform\position</Filter>
-    </ClCompile>
-    <ClCompile Include="rotation.cpp">
-      <Filter>BaseEngine\OPENGL\Transform\rotation</Filter>
-    </ClCompile>
-    <ClCompile Include="scale.cpp">
-      <Filter>BaseEngine\OPENGL\Transform\scale</Filter>
-    </ClCompile>
-    <ClCompile Include="transform.cpp">
-      <Filter>BaseEngine\OPENGL\Transform</Filter>
+    <ClCompile Include="stb.cpp">
+      <Filter>BaseEngine\OPENGL\texture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameManager.h">
-      <Filter>BaseEngine\gameMenager</Filter>
+    <ClInclude Include="Font_Shader.h">
+      <Filter>BaseEngine\OPENGL\shader</Filter>
     </ClInclude>
-    <ClInclude Include="game.h">
-      <Filter>BaseEngine\gameUpdate</Filter>
+    <ClInclude Include="..\..\dependeces\src\stb_image.h">
+      <Filter>BaseEngine\OPENGL\texture</Filter>
     </ClInclude>
-    <ClInclude Include="window.h">
-      <Filter>BaseEngine\OPENGL\window</Filter>
-    </ClInclude>
-    <ClInclude Include="vector3.h">
-      <Filter>BaseEngine\OPENGL\Transform\vectorT</Filter>
-    </ClInclude>
-    <ClInclude Include="position.h">
-      <Filter>BaseEngine\OPENGL\Transform\position</Filter>
-    </ClInclude>
-    <ClInclude Include="rotation.h">
-      <Filter>BaseEngine\OPENGL\Transform\rotation</Filter>
-    </ClInclude>
-    <ClInclude Include="scale.h">
-      <Filter>BaseEngine\OPENGL\Transform\scale</Filter>
-    </ClInclude>
-    <ClInclude Include="transform.h">
-      <Filter>BaseEngine\OPENGL\Transform</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGL_Includes.h">
-      <Filter>BaseEngine\OPENGL</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\3.3.shader.fs">
+      <Filter>BaseEngine\OPENGL\shader</Filter>
+    </None>
+    <None Include="..\shaders\3.3.shader.vs">
+      <Filter>BaseEngine\OPENGL\shader</Filter>
+    </None>
+    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.frag">
+      <Filter>BaseEngine\OPENGL\shader</Filter>
+    </None>
+    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.vs">
+      <Filter>BaseEngine\OPENGL\shader</Filter>
+    </None>
   </ItemGroup>
 </Project>

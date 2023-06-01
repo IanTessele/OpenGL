@@ -19,27 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="position.cpp" />
-    <ClCompile Include="rotation.cpp" />
-    <ClCompile Include="scale.cpp" />
-    <ClCompile Include="transform.cpp" />
-    <ClCompile Include="vector3.cpp" />
-    <ClCompile Include="window.cpp" />
+    <ClCompile Include="stb.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h" />
-    <ClInclude Include="GameManager.h" />
-    <ClInclude Include="OpenGL_Includes.h" />
-    <ClInclude Include="position.h" />
-    <ClInclude Include="rotation.h" />
-    <ClInclude Include="scale.h" />
-    <ClInclude Include="transform.h" />
-    <ClInclude Include="vector3.h" />
-    <ClInclude Include="window.h" />
+    <ClInclude Include="..\..\dependeces\src\stb_image.h" />
+    <ClInclude Include="Font_Shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.frag" />
+    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.vs" />
+    <None Include="..\shaders\3.3.shader.fs" />
+    <None Include="..\shaders\3.3.shader.vs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
