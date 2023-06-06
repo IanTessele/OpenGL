@@ -46,6 +46,12 @@
     <ClCompile Include="texture.cpp">
       <Filter>BaseEngine\OPENGL\texture</Filter>
     </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>BaseEngine\OPENGL\meshs</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>BaseEngine\OPENGL\transform</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Font_Shader.h">
@@ -62,6 +68,12 @@
     </ClInclude>
     <ClInclude Include="texture.h">
       <Filter>BaseEngine\OPENGL\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>BaseEngine\OPENGL\meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="allIncludes.h">
+      <Filter>BaseEngine\OPENGL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

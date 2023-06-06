@@ -1,9 +1,8 @@
 #pragma once
 #ifndef TEXTURE
 #define TEXTURE
-#include <STB/stb_image.h>
-#include <glad/glad.h>
 #include "Font_Shader.h"
+#include "allIncludes.h"
 class texture
 {
 public:

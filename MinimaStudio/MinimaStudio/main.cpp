@@ -1,16 +1,7 @@
 #pragma once
 #ifndef MAIN
 #define MAIN
-
-#include <glad/glad.h>
-#include <glfw/glfw3.h>
 #include "Font_Shader.h"
-#include <iostream>
-#include <STB/stb_image.h>
-
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
 #include "plane.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
