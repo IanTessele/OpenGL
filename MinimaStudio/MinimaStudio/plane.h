@@ -4,10 +4,11 @@
 #include <glad/glad.h>
 #include <glfw/glfw3.h>
 #include "Font_Shader.h"
-#include <glm/glm.hpp>
+#include "transform.h"
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <STB/stb_image.h>
+#include "texture.h"
 class plane
 {
 public:
@@ -19,9 +20,8 @@ public:
     const void Draw(Shader ourShader) ;
     const void Delete();
     unsigned int VBO, VAO, EBO;
-    unsigned int texture1;
-    int width, height, nrChannels;
-
+    transform Transform;
+    texture Texture;
 };
 
 #endif // !PLANE

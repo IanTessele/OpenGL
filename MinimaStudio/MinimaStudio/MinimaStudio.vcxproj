@@ -31,11 +31,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="plane.cpp" />
     <ClCompile Include="stb.cpp" />
+    <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\dependeces\src\stb_image.h" />
     <ClInclude Include="Font_Shader.h" />
     <ClInclude Include="plane.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="transform.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.frag" />

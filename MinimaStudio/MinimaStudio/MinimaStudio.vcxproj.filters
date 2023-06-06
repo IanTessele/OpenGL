@@ -26,6 +26,9 @@
     <Filter Include="BaseEngine\OPENGL\meshs\plane">
       <UniqueIdentifier>{025b0fe3-ae4f-4c47-a567-5bd9cba9ecad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BaseEngine\OPENGL\transform">
+      <UniqueIdentifier>{3f059df3-ff77-438d-b9aa-0cd2012c208b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -40,6 +43,9 @@
     <ClCompile Include="plane.cpp">
       <Filter>BaseEngine\OPENGL\meshs\plane</Filter>
     </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>BaseEngine\OPENGL\texture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Font_Shader.h">
@@ -50,6 +56,12 @@
     </ClInclude>
     <ClInclude Include="plane.h">
       <Filter>BaseEngine\OPENGL\meshs\plane</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>BaseEngine\OPENGL\transform</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>BaseEngine\OPENGL\texture</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

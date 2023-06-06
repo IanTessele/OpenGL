@@ -2,6 +2,8 @@
 
 plane::plane()
 {
+    Transform.Rotation = glm::vec3(0.0f, 0.0f, 1.0f);
+    Transform.setScale(glm::vec3(0.5f, 0.5f, 0.5f));
 }
 
 plane::~plane()
@@ -45,55 +47,20 @@ const void plane::Set_Mesh(Shader ourShader)
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-
-    LoadTexture(ourShader);
+    Texture.loadTexture(ourShader);
 }
 
-const void plane::LoadTexture(Shader ourShader)
-{
-    // load and create a texture 
-    // -------------------------
-    glGenTextures(1, &texture1);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    // set the texture wrapping parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    // set texture filtering parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    // load image, create texture and generate mipmaps
-    int width, height, nrChannels;
-    stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
-    // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-    unsigned char* data = stbi_load("../textures/container.jpg", &width, &height, &nrChannels, 0);
-    if (data)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
-    }
-    stbi_image_free(data);
-
-    ourShader.use(); 
-
-    glUniform1i(glGetUniformLocation(ourShader.ID, "texture1"), 0);
-}
 
 const void plane::Draw(Shader ourShader)
 {
 
-    // bind textures on corresponding texture units
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1);
+    Texture.draw();
 
     // create transformations
     glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-    transform = glm::translate(transform, glm::vec3(0.0f, 0.0f, 0.0f));
-    transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-    transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.0f));
+    transform = glm::translate(transform, Transform.Position);
+    transform = glm::rotate(transform, (float)glfwGetTime(), Transform.Rotation);
+    transform = glm::scale(transform, Transform.Scale);
     
     // render the triangle
     ourShader.use();
