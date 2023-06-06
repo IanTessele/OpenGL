@@ -7,7 +7,7 @@
 class texture
 {
 public:
-	void loadTexture(Shader ourShader);
+	void loadTexture(Shader ourShader, const char* fileTexture);
 	void draw();
 
 private:

@@ -59,7 +59,7 @@ int main()
     // ------------------------------------
     Shader ourShader = Shader("../shaders/3.3.shader.vs", "../shaders/3.3.shader.fs");
 
-    Plane.Set_Mesh(ourShader);
+    Plane.loadPlane(ourShader, "../textures/container.jpg");
 
     // render loop
     // -----------

@@ -15,8 +15,7 @@ public:
 
     plane();
     ~plane();
-    const void Set_Mesh(Shader ourShader);
-    const void LoadTexture(Shader ourShader);
+    const void loadPlane(Shader ourShader, const char* fileTexture);
     const void Draw(Shader ourShader) ;
     const void Delete();
     unsigned int VBO, VAO, EBO;

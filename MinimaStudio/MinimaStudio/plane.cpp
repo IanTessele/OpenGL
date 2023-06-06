@@ -10,7 +10,7 @@ plane::~plane()
 {
 }
 
-const void plane::Set_Mesh(Shader ourShader)
+const void plane::loadPlane(Shader ourShader, const char* fileTexture)
 {
     float vertices[] = {
         // positions          // colors           // texture coords
@@ -47,7 +47,7 @@ const void plane::Set_Mesh(Shader ourShader)
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    Texture.loadTexture(ourShader);
+    Texture.loadTexture(ourShader, fileTexture);
 }
 
 
