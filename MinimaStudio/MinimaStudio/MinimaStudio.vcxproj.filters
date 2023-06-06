@@ -20,6 +20,12 @@
     <Filter Include="BaseEngine\OPENGL\texture">
       <UniqueIdentifier>{b891de55-f8b3-4bbe-a361-b4ee9138ddd4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BaseEngine\OPENGL\meshs">
+      <UniqueIdentifier>{f13aa049-c37b-468c-b1e7-21bf266a21cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\meshs\plane">
+      <UniqueIdentifier>{025b0fe3-ae4f-4c47-a567-5bd9cba9ecad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -31,6 +37,9 @@
     <ClCompile Include="stb.cpp">
       <Filter>BaseEngine\OPENGL\texture</Filter>
     </ClCompile>
+    <ClCompile Include="plane.cpp">
+      <Filter>BaseEngine\OPENGL\meshs\plane</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Font_Shader.h">
@@ -38,6 +47,9 @@
     </ClInclude>
     <ClInclude Include="..\..\dependeces\src\stb_image.h">
       <Filter>BaseEngine\OPENGL\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="plane.h">
+      <Filter>BaseEngine\OPENGL\meshs\plane</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
