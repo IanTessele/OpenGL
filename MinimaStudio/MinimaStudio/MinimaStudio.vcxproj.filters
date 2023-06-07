@@ -29,6 +29,18 @@
     <Filter Include="BaseEngine\OPENGL\transform">
       <UniqueIdentifier>{3f059df3-ff77-438d-b9aa-0cd2012c208b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BaseEngine\OPENGL\window">
+      <UniqueIdentifier>{d5681c82-3158-4851-82db-f5ba7211413b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\OPENGL\camera">
+      <UniqueIdentifier>{3d7527c0-095d-4801-9c6c-da16bb8e1c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\GameManager">
+      <UniqueIdentifier>{3a01bc62-59e8-419e-a9ee-09eaa89956e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Game">
+      <UniqueIdentifier>{2fe4073b-98ef-4b3e-a23e-8ae55334e7ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -51,6 +63,12 @@
     </ClCompile>
     <ClCompile Include="transform.cpp">
       <Filter>BaseEngine\OPENGL\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>BaseEngine\OPENGL\window</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>BaseEngine\OPENGL\camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,18 +93,30 @@
     <ClInclude Include="allIncludes.h">
       <Filter>BaseEngine\OPENGL</Filter>
     </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>BaseEngine\OPENGL\window</Filter>
+    </ClInclude>
+    <ClInclude Include="systemStart.h">
+      <Filter>BaseEngine\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>BaseEngine\OPENGL\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
+      <Filter>BaseEngine\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>BaseEngine\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>BaseEngine\Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\shaders\3.3.shader.fs">
       <Filter>BaseEngine\OPENGL\shader</Filter>
     </None>
     <None Include="..\shaders\3.3.shader.vs">
-      <Filter>BaseEngine\OPENGL\shader</Filter>
-    </None>
-    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.frag">
-      <Filter>BaseEngine\OPENGL\shader</Filter>
-    </None>
-    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.vs">
       <Filter>BaseEngine\OPENGL\shader</Filter>
     </None>
   </ItemGroup>

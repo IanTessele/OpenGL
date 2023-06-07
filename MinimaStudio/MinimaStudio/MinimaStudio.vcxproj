@@ -27,6 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh.cpp" />
@@ -34,19 +35,24 @@
     <ClCompile Include="stb.cpp" />
     <ClCompile Include="texture.cpp" />
     <ClCompile Include="transform.cpp" />
+    <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\dependeces\src\stb_image.h" />
     <ClInclude Include="allIncludes.h" />
+    <ClInclude Include="camera.h" />
     <ClInclude Include="Font_Shader.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="systemStart.h" />
     <ClInclude Include="mesh.h" />
     <ClInclude Include="plane.h" />
     <ClInclude Include="texture.h" />
+    <ClInclude Include="time.h" />
     <ClInclude Include="transform.h" />
+    <ClInclude Include="window.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.frag" />
-    <None Include="..\..\..\openglOLD\Base_OpenGL_Atual(GLEW)\shaders\SHADER.vs" />
     <None Include="..\shaders\3.3.shader.fs" />
     <None Include="..\shaders\3.3.shader.vs" />
   </ItemGroup>

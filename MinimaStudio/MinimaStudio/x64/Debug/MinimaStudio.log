@@ -1,22 +1,6 @@
-﻿  glad.c
-  main.cpp
+﻿  main.cpp
 C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(48): warning C4201: nonstandard extension used: nameless struct/union
 C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(133,3): message : see reference to class template instantiation 'glm::qua<T,Q>' being compiled
-C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\main.cpp(94,44): warning C4100: 'window': unreferenced formal parameter
-  mesh.cpp
-  plane.cpp
-C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(48): warning C4201: nonstandard extension used: nameless struct/union
-C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(133,3): message : see reference to class template instantiation 'glm::qua<T,Q>' being compiled
-  stb.cpp
-C:\open gl\new OpenGL\dependeces\include\STB\stb_image.h(2225,32): warning C4244: 'argument': conversion from 'int' to 'short', possible loss of data
-C:\open gl\new OpenGL\dependeces\include\STB\stb_image.h(2282,35): warning C4244: 'argument': conversion from 'int' to 'short', possible loss of data
-C:\open gl\new OpenGL\dependeces\include\STB\stb_image.h(3426,49): warning C4244: '=': conversion from 'int' to 'unsigned char', possible loss of data
-  texture.cpp
-C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(48): warning C4201: nonstandard extension used: nameless struct/union
-C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(133,3): message : see reference to class template instantiation 'glm::qua<T,Q>' being compiled
-  transform.cpp
-C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(48): warning C4201: nonstandard extension used: nameless struct/union
-C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(133,3): message : see reference to class template instantiation 'glm::qua<T,Q>' being compiled
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\GameManager.h(43,44): warning C4100: 'window': unreferenced formal parameter
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\systemStart.h(16): warning C4715: 'startGlad': not all control paths return a value
   MinimaStudio.vcxproj -> C:\open gl\new OpenGL\MinimaStudio\x64\Debug\MinimaStudio.exe
