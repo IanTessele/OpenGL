@@ -1,5 +1,6 @@
 ﻿  main.cpp
 C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(48): warning C4201: nonstandard extension used: nameless struct/union
 C:\open gl\new OpenGL\dependeces\include\glm\detail\type_quat.hpp(133,3): message : see reference to class template instantiation 'glm::qua<T,Q>' being compiled
+C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\Player.h(39,8): warning C4189: 'V': local variable is initialized but not referenced
 C:\open gl\new OpenGL\MinimaStudio\MinimaStudio\systemStart.h(16): warning C4715: 'startGlad': not all control paths return a value
   MinimaStudio.vcxproj -> C:\open gl\new OpenGL\MinimaStudio\x64\Debug\MinimaStudio.exe

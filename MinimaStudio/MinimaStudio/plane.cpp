@@ -4,7 +4,7 @@ plane::plane()
 {
     Transform.angle = 0.0f;
     Transform.Rotation = glm::vec3(0.0f, 0.0f, 1.0f);
-    Transform.setScale(glm::vec3(0.5f, 0.5f, 0.5f));
+    Transform.setScale(glm::vec3(1.0f, 1.0f, 1.0f));
 }
 
 plane::~plane()

@@ -21,6 +21,7 @@ void awake() {
 
 void start(Shader ourShader) {
 	startGame(ourShader);
+	cam.cameraSetFov(10);
 }
 
 void update(Shader ourShader) {
@@ -28,7 +29,7 @@ void update(Shader ourShader) {
 	processInput(Window.GetWindow());
 	cam.cameraUpdate(ourShader, Window);
 
-	updateGame(ourShader);
+	updateGame(ourShader, cam, Window);
 
 	glfwSwap(Window.GetWindow());
 }

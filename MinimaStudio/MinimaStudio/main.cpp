@@ -2,7 +2,7 @@
 #ifndef MAIN
 #define MAIN
 #include "GameManager.h"
-
+#include "time.h"
 int main()
 {
 
@@ -15,7 +15,6 @@ int main()
 
     while (!glfwWindowShouldClose(Window.GetWindow()))
     {
-
 
         update(ourShader);
 

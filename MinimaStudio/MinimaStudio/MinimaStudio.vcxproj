@@ -41,9 +41,12 @@
     <ClInclude Include="..\..\dependeces\src\stb_image.h" />
     <ClInclude Include="allIncludes.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="colliderTest.h" />
     <ClInclude Include="Font_Shader.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="sprite.h" />
     <ClInclude Include="systemStart.h" />
     <ClInclude Include="mesh.h" />
     <ClInclude Include="plane.h" />

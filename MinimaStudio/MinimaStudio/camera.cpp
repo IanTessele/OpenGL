@@ -3,7 +3,7 @@
 camera::camera()
 {
     cameraPos = glm::vec3(0.0f, 0.0f, -1.0f);
-    FOV = 1.0f;
+    FOV = 3.0f;
 
 }
 
@@ -23,8 +23,8 @@ void camera::cameraUpdate(Shader ourShader, window Window)
     glViewport(0 ,0 , Window.getWidth(), Window.getHeight());
 
     // create transformations
-    glm::mat4 view = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-    glm::mat4 projection = glm::mat4(1.0f);
+    view = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+    projection = glm::mat4(1.0f);
     
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -45,9 +45,16 @@ void camera::cameraUpdate(Shader ourShader, window Window)
     ourShader.setMat4("view", view);
 }
 
-void camera::cameraFollow(glm::vec3 target)
+void camera::cameraFollow(glm::vec3 target, Shader ourShader)
 {
-    cameraPos = glm::vec3(target.x,target.y,cameraPos.z);
+    cameraPos = glm::vec3(-target.x,-target.y,cameraPos.z);
+    view = glm::translate(view, cameraPos);
+    ourShader.setMat4("view", view);
+}
+
+void camera::cameraSetFov(int fov)
+{
+    FOV = fov;
 }
 
 

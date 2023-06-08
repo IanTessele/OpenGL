@@ -7,5 +7,6 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <STB/stb_image.h>
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 #endif

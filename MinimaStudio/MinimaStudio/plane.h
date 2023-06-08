@@ -5,10 +5,9 @@
 #include "transform.h"
 #include "texture.h"
 #include "mesh.h"
-class plane
+ class plane
 {
 public:
-
     plane();
     ~plane();
     const void loadPlane(Shader ourShader, const char* fileTexture);

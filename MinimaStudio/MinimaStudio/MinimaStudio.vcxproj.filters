@@ -50,6 +50,9 @@
     <Filter Include="BaseEngine\gameEngine\myGameScripts\player">
       <UniqueIdentifier>{79278d0e-9435-45b2-b221-2273929c5c7b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BaseEngine\OPENGL\sprite">
+      <UniqueIdentifier>{e8d19622-afe3-4d9d-bca9-464be10d1cf1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -119,6 +122,15 @@
     </ClInclude>
     <ClInclude Include="game.h">
       <Filter>BaseEngine\gameEngine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>BaseEngine\OPENGL\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>BaseEngine\gameEngine\myGameScripts\player</Filter>
+    </ClInclude>
+    <ClInclude Include="colliderTest.h">
+      <Filter>BaseEngine\OPENGL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

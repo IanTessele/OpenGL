@@ -1,13 +1,21 @@
 #pragma once
-#ifndef TIME
-#define TIME
-#include "allIncludes.h"
-float deltaTime() {
-    float currentFrame = static_cast<float>(glfwGetTime());
-    float lastFrame = currentFrame;
-    float deltaTime = currentFrame - lastFrame;
+#ifndef DELTA_TIME
+#define DELTA_TIME
 
-    return deltaTime;
-}
+#include <glfw/glfw3.h>
+
+void DeltaTime() {
+
+	float lastFrame = 0.0f;
+	float fps = 60.0f;
+	float currentFrame;
+	float deltaTime;
+
+	do {
+		currentFrame = (float)glfwGetTime();
+		deltaTime = currentFrame - lastFrame;
+	} while (deltaTime < 1.0f / fps);
+		lastFrame = currentFrame;
+};
 
 #endif // !TIME
