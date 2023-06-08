@@ -13,7 +13,7 @@ public:
 	int getWidth() { return SCR_WIDTH; };
 	int getHeight() { return SCR_HEIGHT; };
 
-	void createWindow(int _SCR_WIDTH,int _SCR_HEIGHT);
+	void createWindow(int _SCR_WIDTH,int _SCR_HEIGHT, bool fullScreem);
 private:
 	
 	GLFWwindow* _Window;

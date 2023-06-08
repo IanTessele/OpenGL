@@ -35,11 +35,20 @@
     <Filter Include="BaseEngine\OPENGL\camera">
       <UniqueIdentifier>{3d7527c0-095d-4801-9c6c-da16bb8e1c84}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaseEngine\GameManager">
+    <Filter Include="BaseEngine\gameEngine">
+      <UniqueIdentifier>{2d3b9f6f-26ae-4edb-be74-efa182f557d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\gameEngine\GameManager">
       <UniqueIdentifier>{3a01bc62-59e8-419e-a9ee-09eaa89956e4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BaseEngine\Game">
+    <Filter Include="BaseEngine\gameEngine\Game">
       <UniqueIdentifier>{2fe4073b-98ef-4b3e-a23e-8ae55334e7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\gameEngine\myGameScripts">
+      <UniqueIdentifier>{1b0054b7-b59c-4bf5-bdce-da9baffd8d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\gameEngine\myGameScripts\player">
+      <UniqueIdentifier>{79278d0e-9435-45b2-b221-2273929c5c7b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -106,10 +115,10 @@
       <Filter>BaseEngine\OPENGL</Filter>
     </ClInclude>
     <ClInclude Include="GameManager.h">
-      <Filter>BaseEngine\GameManager</Filter>
+      <Filter>BaseEngine\gameEngine\GameManager</Filter>
     </ClInclude>
     <ClInclude Include="game.h">
-      <Filter>BaseEngine\Game</Filter>
+      <Filter>BaseEngine\gameEngine\Game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

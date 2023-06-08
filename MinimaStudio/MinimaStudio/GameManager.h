@@ -7,7 +7,6 @@
 #include "camera.h"
 #include "game.h"
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
 window Window;
@@ -16,8 +15,7 @@ camera cam;
 
 void awake() {
 	startGLFW();
-	Window.createWindow(800, 600);
-	glfwSetFramebufferSizeCallback(Window.GetWindow(), framebuffer_size_callback);
+	Window.createWindow(1920, 1080,true);
 	startGlad();
 }
 
@@ -26,8 +24,8 @@ void start(Shader ourShader) {
 }
 
 void update(Shader ourShader) {
+	
 	processInput(Window.GetWindow());
-	clearWindow();
 	cam.cameraUpdate(ourShader, Window);
 
 	updateGame(ourShader);
@@ -38,11 +36,6 @@ void update(Shader ourShader) {
 void quit() {
 	quitGame();
 	glfwTerminate();
-}
-
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-    glViewport(0, 0, width, height);
 }
 void processInput(GLFWwindow* window)
 {
